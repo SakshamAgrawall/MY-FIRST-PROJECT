@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML TAG</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            background-color: rgba(0,0,0,0.2);
+            color: white;
+            padding:0.5rem 1rem;
+            margin: 0;
+            position: fixed;
+            width: 100%;
+        }
+        .header{
+            width: 100%;
+            background: url('https://img.freepik.com/free-photo/abstract-background-dynamic-pattern-geometric-texture-modern-triangles_181020-3117.jpg?w=740');
+            color: white;
+            height: 80vh;
+            padding: 100px 0rem;
+            text-align: center;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .header h4{
+            margin-top: 70px;
+            font-size: 2rem;
+        }
+        .my-name{
+            font-size: 60px;
+        }
+        h2{
+            color: blue;
+            text-decoration: underline;
+        }
+        #about-me img{
+            height: 300px;
+            width: 150px;
+            border-radius: 30px;            
+        }
+        #about-me{
+            display: flex;
+            padding: 5rem 10rem;
+        }
+        .aboutme-box {
+            color: #999;
+            width: 50%;
+            padding: 20px;
+            height: 350px;
+        }
+        .aboutme-box strong{
+            color: #000;
+        }
+        #education , #skills{
+            padding: 50px 5%;
+        }
+        table{
+            width: 100%;
+        }
+        td , th ,tr{
+            border: 1px solid #000;
+            height: 40px;
+            padding: 0 1rem;
+        }
+        th{
+            background-color: black;
+            color: white;
+        }
+        .skills-topic li{
+            color: red;
+        }
+        .skills-topic li ol li{
+            color: blue;
+        }
+        #contact{
+            background-color: rgba(0,0,0,0.8);
+            color: #fff;
+            padding: 50px;
+        }
+            
+        form div{
+            margin: 1rem;
+        }
+        [name="email"] , [name="fullname"] , #profession-select {
+           height: 30px;
+           width: 350px;
+        }
+        .btn{
+            height: 30px;
+            width: 200px;
+            background-color: blue;
+            color: #fff;
+        }
+        #social-platform li{
+          width:  80px;
+          height: 80px;
+          line-height: 80px;
+          background-color: blue;
+          display: inline-block;
+          text-align: center;
+          border-radius: 100%;
+        }
+        #social-platform li:hover{
+          background-color:blue;
+          color: white;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            height: 40px;
+            margin-top: 0;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Portfolio</h1>
+    </nav>
+<section class="header">
+<h4><span style="color:red;">Hey !</span> I am</h4> 
+<h1 class="my-name">AlmaBetter</h1>
+    <h4>I am <span style="color:yellow;">undergraduate student</span></h4>
+</section>
+<section id="about-me">
+<div class="aboutme-box">
+    <div style="width:200px;margin:0 auto;">
+        <img src="i2.jpg">
+    </div>
+</div>
+       <div class="aboutme-box"> 
+         <h2>About Me</h2>
+            <p><b>Name:</b>Saksham Agrawal</p>
+            <p><b>college:</b>JECRC college</p>
+            <p><b>Graduation Year:</b>2022</p>
+            <p><b>CGPA:</b>7.5</p>
+            <p><b>Email:</b><a href="mailto:sakshamagrawal18@gmail.com"/>SakshamAgrawal</a></p>
+            <p><b>Summary:</b></p>
+            <p>Experienced Developer, Team Player and a Leader with a demonstrated history of working in startups. Strong engineering professional with a Bachelor of Technology (BTech) focused in Computer Science from National Institute of Technology.</p>
+       </div>
+</section>
+<hr/>
+<section id="education">
+        <h2>Education</h2>
+        <table>
+            <tr>
+                <th>college</th>
+                <th>Courses</th>
+                <th>Percentage/CGPA</th>
+                <th>Duration</th>
+            </tr>
+            <tr>
+                <td>JECRC College</td>
+                <td>B.TECH</td>
+                <td>7.5CGPA</td>
+                <td>4YEARS</td>
+            </tr>
+            <tr>
+                <td>career point sr. school</td>
+                <td>12th</td>
+                <td>61.20%</td>
+                <td>1YEAR</td>
+            </tr>
+            <tr>
+                <td>ST. Xavior's school</td>
+                <td>10th</td>
+                <td>75.83%</td>
+                <td>1YEAR</td>
+            </tr>
+        </table>
+    </section>
+        <hr/>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div>
+        <ol class="skills-topic">
+            <li>Language
+                <ol>
+                    <Li>C++</Li>
+                    <Li>JavaScript</Li>
+                    <Li>Python</Li>
+                </ol>
+            </li>
+
+            <li>Development
+                <ol>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
+                </ol>
+            </li>
+            <li>Tools
+                <ol>
+                    <li>VS code</li>
+                    <li>GIT</li>
+                    <li>AWS</li>
+                </ol>
+            </li>
+        </ol>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <div style="display:flex;">
+        <section style="width:50%">
+        <div style="padding:0rem 3rem;">
+            <p><strong>Address :</strong>1/305 Housing board colony,swm,raj</p>
+            <p><strong>Email:</strong><a href="mailto:sakshamagrawal18@gmail.com"/>SakshamAgrawal</a></p>
+            <p><strong>Mobile no:</strong>7023797883</p>
+        </div>
+        <div>
+            <ul id="social-platform">
+                <a href="https://twitter.com/Sakshamaagraw" class="btn"><li>Twitter</li></a>
+                <a href="https://www.linkedin.com/in/saksham-agrawal-239665214/" class="btn"><li>Linkdin</li></a>
+                <a href="https://www.instagram.com/_saksham_agrawal_/" class="btn"><li>Instagram</li></a>
+                <a href="https://www.instagram.com/_saksham_agrawal_/" class="btn"><li>Instagram</li></a>
+            </ul>
+        </div>
+    </section>
+    <section style="width":50%;">
+            <form action="http://www/example.com" method="get">
+                <fieldset>
+                    <legend>Drop a Message</legend>
+                <div>
+                    <label>Name:</label>
+                    <br/>
+                    <input type="text" Name="fullname" size="30" maxlength="100"/>
+                    </div>
+                    <div>
+                    <label>Email:</label>
+                    <br/>
+                    <input type="email"name="email" size="30" maxlength="100"/>
+                </div>
+                <div>
+                    <label for="hear-about">Select your profession? </label>
+                    <br/>
+                    <select name="referrer" id="Profession-select">
+                      <option value="google">Student</option>
+                      <option value="friend">Founder / CEO</option>
+                      <option value="advert">HR</option>
+                      <option value="other">Tech Lead</option>
+                    </select>
+                </div>
+
+                  <div>
+                   <label for="comments">Message:</label>
+                   <br/>
+                   <textarea rows="4" cols="45" id="comments"></textarea>
+                  </div>
+                  <div>
+                    would you like to connect?
+                    <br/>
+                    <label><input type="radio" name="rating" value="Yes"/>Yes</label>
+                    <label><input type="radio" name="rating" value="no"/>No</label>
+                    <label><input type="radio" name="rating" value="Maybe"/>Maybe</label>
+                </div>
+                <br/>
+                    <input type="submit" class="btn" value="send message"/>
+            </fieldset>
+        </form>
+    
+</section>
+</div>
+    </section>
+    <footer>
+        <p>Copyright &copy;2022 all right reserved</p>
+      </footer>
+</body>
+</html>
