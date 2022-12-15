@@ -1,4 +1,4 @@
-# Personal Porftfolio
+# Personal Portfolio
 this is my first beginner level project this is my personal portfolio webpage by using HTML and CSS.
 
 # here is some Screenshot
